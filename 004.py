@@ -3,6 +3,7 @@ def pal():
         if (int(str(x)[::-1])) == x:
             for y in range(999, 100, -1):
                 if x % y == 0 and 99 < x / y < 1000:
+                    print(x,y)
                     return x
 
 
