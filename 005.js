@@ -1,15 +1,10 @@
 let x = 20;
 
 while (1) {
-
     let success = true;
-
     for (let i = 19; i > 1; i--) {
-
         if (x % i != 0) {
-
             success = false;
-
             break;
         }
     }
@@ -22,4 +17,3 @@ while (1) {
 }
 
 console.log(x);
-
