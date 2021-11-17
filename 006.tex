@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{algpseudocode}
+\usepackage{relsize}
+
+\title{Sum square difference : 006}
+
+\begin{document}
+\date{}
+\maketitle
+
+
+
+\section*{Problem}
+
+The sum of the squares of the first ten natural numbers is,
+\newline \hspace*{3mm} ${1^2 + 2^2 + 3^2 + ... + 10^2 = 385}$
+
+The square of the sum of the first ten natural numbers is,
+\newline \hspace*{3mm} ${(1 + 2 + 3 + ... + 10)^2 = 3025}$
+
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is.
+\newline \hspace*{3mm} ${3025 - 385}$
+
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+
+
+\section*{Solution 1}
+This solution requires simple brute force. Maintain two variables and loop from 1 to 100, adding the index to the first variable and the index squared to the second. After, just square the first variable and subtract the second variable from the result.
+
+\section*{Solution 2}
+\hspace*{3mm} $\mathlarger{\sum}_{x=1}^{100} x = \frac{n(n+1)}{2}$
+\newline \hspace*{3mm} $\mathlarger{\sum}_{x=1}^{100} x^2 = \frac{n(n+1)(2n+1)}{6}$
+
+\end{document}

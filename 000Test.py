@@ -1,3 +1,1 @@
-import math
-
-print(math.ceil(10.2))
+print(0.5%1)
