@@ -1,17 +1,15 @@
-# longest collatz sequence
-# consider evens
-max = (0, 0)
-start = 0
-for n in range(0, 1000000):
-    start = n
-    i = 0
-    while n > 1:
-        if n % 2 == 0:
-            n /= 2
-        else:
-            n = 3 * n + 1
-        i += 1
-    if i > max[0]:
-        max = (i, start)
+def getSeqLen(start):
+    value = start
+    l = 1
+    while value > 1:
+        value = value / 2 if value % 2 == 0 else 3 * value + 1
+        l += 1
+    return l
 
-print(max)
+longest = 0
+for i in range(1000000):
+    candidate = getSeqLen(i)
+    if candidate > longest:
+        longest = candidate
+
+print(longest)

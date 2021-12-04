@@ -1,1 +1,3 @@
-print(0.5%1)
+import sys
+
+print(sys.maxsize)
